@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电影卡片</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="fa/css/all.css">
+	<style>
+		.clearfix::before,.clearfix::after{content:'';display:table;clear:both;}
+		.movieCard {
+			width:240px;
+			margin:100px auto;
+			box-shadow:0 0 10px rgba(0,0,0,.3);	
+		}
+		.cont-wrapper{padding:0 18px;margin-top:10px;}
+		.cont-wrapper h2{color:#717171;margin:15px 0;}
+		.cont-wrapper h3{color:#acaaaa;}
+		.cont-wrapper p{margin:18px 0;}
+		.star-wrapper{line-height:46px;border-top:1px solid #ccc;padding:0 16px;color:#ddd;}
+		.star i.light{color: #b9cb41}
+		.star li{float:left;margin-right:5px;}
+		.weibo{float:right;}
+	</style>
+</head>
+<body>
+	<div class="movieCard">
+		<div class="img-wrapper">
+			<img src="img/10/1.jpg" alt="">
+		</div>
+		<div class="cont-wrapper">
+			<h2>动画电影</h2>
+			<h3>
+				<i class="fas fa-map-marker-alt"></i>
+				动画
+				<p>这是一部好看的动画电影</p>
+			</h3>
+		</div>
+		<div class="star-wrapper clearfix">
+			<ul class="star">
+					<li><i class="fas fa-star light"></i></li>
+					<li><i class="fas fa-star light"></i></li>
+					<li><i class="fas fa-star"></i></li>
+					<li><i class="fas fa-star"></i></li>
+			</ul>
+			<ul class="weibo">
+				<li><i class="fab fa-weibo"></i></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
